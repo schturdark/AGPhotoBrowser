@@ -414,9 +414,9 @@ const NSInteger AGPhotoBrowserThresholdToCenter = 150;
 							 }];
 		} else {
 			// -- Animate out!
-			typeof(self) weakSelf __weak = self;
+			__typeof__(self) __weak weakSelf = self;
 			[self hideWithCompletion:^(BOOL finished){
-				typeof(weakSelf) strongSelf __strong = weakSelf;
+				__typeof__(weakSelf) __strong strongSelf = weakSelf;
 				if (strongSelf) {
 					imageView.center = strongSelf->_startingPanPoint;
 				}
